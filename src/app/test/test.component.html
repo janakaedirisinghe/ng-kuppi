@@ -1,0 +1,17 @@
+<h1>Test Component =></h1>
+
+<i>ngIf directive</i>
+<div *ngIf="isStudentOne" >Student one</div>
+<button (click)="changeState()">click me</button>
+<hr>
+
+<i>ngFor Directive</i>
+<h3 *ngFor="let student of students; first as f">
+ {{f}} - {{student?.name}} - {{student?.age}} -  <span *ngIf="f">fist student</span>
+
+</h3>
+
+<hr>
+<i>routerLink for navigations</i> <br>
+<a routerLink="user">User page</a> <br>
+<a routerLink="profile">Profile page</a>
